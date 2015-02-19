@@ -1,0 +1,29 @@
+What is the project about ?
+-------------------------------
+
+An "Ego Network" has a central focal node which is known as the "ego" and the nodes to whom the ego is directly connected. It also consists of connections between the other nodes. This dataset is a subset of facebook dataset which consists ego networks for 10 different users and also a set of features (0 indicating presence of the feature and 1 indicating absence). It was collcted through a Face Book app, the details of which could be found here (http://snap.stanford.edu/data/egonets-Facebook.html). This repository contains the source code to the algorithm built for clustering the data into 'circles'. Paramters like connection strength between friends and similarity between nodes by considering features is employed to generate circles. The circles 
+
+
+---------------------------------------------------------
+INSTRUCTIONS TO RUN THE PROJECT
+---------------------------------------------------------
+
+Step 1 : Clone the project into you local repository. (git clone link_to_the_project)
+
+Step 2: Build the project after through your terminal. (mvn clean package)
+
+Running the main file
+----------------------
+
+mvn exec:java -Dexec.mainClass=org.clustering.nkher.Starter
+
+Gives you a list of ego networks (numbers) and run !
+
+References
+------------
+
+http://cs.stanford.edu/people/jure/pubs/circles-nips12.pdf
+
+http://www.analytictech.com/networks/egonet.htm
+
+http://snap.stanford.edu/data/egonets-Facebook.html
